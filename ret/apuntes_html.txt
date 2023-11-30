@@ -1,0 +1,263 @@
+HTML significa Hyper Text Markup Language, por sus siglas en inglés, y es el código que se utiliza para estructurar 
+los contenidos de una página web. Es importante saber que HTML no es un lenguaje de programación; 
+es un lenguaje de marcado que define la estructura del contenido. HTML consiste en una serie de elementos que 
+usarás para encerrar diferentes partes del contenido para que se vean o comporten de una determinada manera. 
+
+La primera página HTML, creada por Tim Berners-Lee, 
+fue publicada el 20 de diciembre de 1990 y se veía así:https://worldwideweb.cern.ch/browser/ Links to an external site.
+
+Por favor, tómate un momento para interactuar con la página, presiona botones, enlaces, despliega los menús, etc.
+
+Links to an external site.
+
+Sin embargo, la estructura que provee HTML no es suficiente para hacer que una página luzca bien y sea interactiva, 
+para ello, se necesita de CSS y Javascript, respectivamente.
+
+En un ejemplo de la vida cotidiana, podemos decir que:
+
+HTML es la estructura de la casa.
+CSS es la decoración interior y exterior.
+Javascript es el sistema eléctrico, del agua y otras funcionalidades que hace de esa casa un lugar funcional y habitable. 
+Más adelante veremos cómo la estructura de HTML se relaciona con temas como el posicionamiento SEO, accesibilidad, usabilidad, 
+compatibilidad entre navegadores, etc.
+
+vYa que HTML define la estructura de los contenidos de una página web, debe haber maneras para mostrar ciertos 
+contenidos y elementos de una manera específica, por ejemplo, un título, una imagen, un enlace, letras en negritas, 
+listas, etc. Para esto, tenemos las etiquetas, que son la base de HTML y nos permiten definir los elementos del archivo HTML y especifican qué tipo de elemento se creará.
+
+La estructura de una etiqueta es la siguiente: 
+
+La etiqueta de apertura: Consiste en el nombre del elemento (en este caso, p), encerrado por paréntesis angulares, 
+de apertura y cierre, o mejor conocidos como símbolos de menor que y mayor que ( <p> ).
+La etiqueta de cierre: Es igual que la etiqueta de apertura, excepto que incluye una barra de cierre (/) antes del nombre de la etiqueta.
+
+1La etiqueta de apertura: Consiste en el nombre del elemento (en este caso, p), encerrado por paréntesis angulares ( <p> )de 
+apertura y cierre. Establece dónde comienza o empieza a tener efecto el elemento —en este caso, dónde es el comienzo del párrafo—.
+
+2La etiqueta de cierre: Es igual que la etiqueta de apertura, excepto que incluye una barra de cierre (/) antes del nombre 
+de la etiqueta. Establece dónde termina el elemento —en este caso dónde termina el párrafo—.
+
+3El contenido: Esto es lo que contiene el elemeto, que en este caso es solo texto, por el tipo de etiqueta.
+
+4El elemento: Es todo lo anterior en conjunto, es decir, la etiqueta de apertura, más el contenido, más la etiqueta de cierre.
+
+
+Un elemento HTML puede contener atributos, los cuales contienen información adicional del elemento, 
+pero no aparecerán como contenido del mismo. Estos atributos se componen de nombre del atributo y valor del atributo.
+
+Los atributos siempre se incluyen en la etiqueta de apertura de un elemento, nunca en la de cierre.
+
+Un atributo debe tener siempre:
+
+1.- Un espacio entre este y el nombre de la etiqueta (o del atributo previo, si el elemento ya posee uno o más atributos).
+2.- El nombre del atributo, seguido por un signo de igual (=).
+3.- Comillas de apertura y de cierre, encerrando el valor del atributo.
+
+Los atributos siempre se incluyen en la etiqueta de apertura de un elemento, nunca en la de cierre.
+
+Ya viste como se crea un elemento, pero debes saber que puedes tener un elemento dentro de otro elemento, a esto se le llama: anidación o anidamiento.
+
+Por ejemplo, si quieres resaltar una palabra de un texto (en el ejemplo resaltaremos la palabra muy), 
+podemos encerrarla en un elemento <strong>, que significa que dicha palabra se debe enfatizar y colocar en negritas. 
+
+ 
+
+<p>Mi gato es <strong>muy</strong> huraño y no le gustan los abrazos</p>
+
+ 
+
+Cuando se trata de anidar elementos, es de suma importancia que te asegures de anidarlos correctamente, 
+de forma ordenada. En el ejemplo anterior, la primera etiqueta que usaste es <p> y luego <strong>, pero necesitas cerrar la etiqueta que 
+enfatiza una palabra del texto para que haga efecto, por tanto, ahora cerrarás primero la etiqueta </strong> y posteriormente, ya cierras 
+la etiqueta </p> que envuelve a toda la oración.
+
+Este sería un ejemplo de anidación incorrecta: 
+
+<p>Mi gato es <strong>muy gruñon.</p></strong>
+
+Los elementos deben abrirse y cerrarse ordenadamente, de forma tal que se encuentren claramente dentro o 
+fuera el uno del otro. Si estos se encuentran intercalados o solapados, el navegador web tratará de adivinar lo que intentas decirle, 
+pero puede que obtengas resultados que no necesitas. 
+
+
+En HTML existen los elementos vacíos, es decir, elementos que no tienen contenido. Estos elementos vacíos solo utilizan una etiqueta,
+ no vienen en pares como el resto de las etiquetas y se les conoce como etiqueta de autocierre.
+
+Un ejemplo de este elemento es:  <img> que se utiliza para insertar imágenes en nuestro documento html.
+
+Ejemplo: 
+
+<img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt= "Gatito descansando en el pasto">
+
+ 
+
+Date cuenta que la etiqueta <img> no tiene etiqueta de cierre (</img>) ni contenido encerrado, 
+esto es porque un elemento de imagen no encierra contenido al cual afectar, pues su propósito es desplegar una imagen, 
+indicada por una url, en donde se indica en el documento html. Pero lo que sí tiene esta etiqueta son dos atributos: src y alt. 
+Si no recuerdas qué es un atributo, regresa a esa parte del módulo, por favor. 
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Definition of HTML</title>
+  </head>
+  <body>
+    <!--Contenido de la página, por ejemplo, texto e imagenes-->
+  </body>
+</html>
+
+CSS significa Cascading Style Sheets (hojas de estilo en cascada) y es un lenguaje basado en reglas que determinarán el estilo y diseño (forma, color, tamaño, espaciado, animaciones) de un elemento o grupo de elementos en una página web. No es un lenguaje de programación ni de marcado, sino de estilos.
+
+Se le denomina estilos en cascada porque se lee, procesa y aplica el código desde arriba hacia abajo, siguiendo un patrón denominado herencia, y en el caso de existir alguna ambigüedad, algún código que se contradice, se siguen una serie de normas para resolverla. 
+
+Acá puedes ver la documentación oficial de CSS: https://developer.mozilla.org/es/docs/Web/CSS/Reference#indexLinks to an external site. 
+
+Por favor ve el siguiente video, para que tengas una visión más amplia de lo que es CSS y cómo funciona: 
+
+
+
+1) CSS externo: Consiste en crear un archivo .css y usar <link> dentro <head> con la ruta de nuestra hoja de estilos.
+
+Ejemplo: <link rel="stylesheet" href="mystyle.css">
+
+2) CSS interno: Consiste en escribir las reglas de CSS dentro del elemento <style> que se coloca dentro de <head>.
+
+Ejemplo: 
+
+<head>
+
+<style>
+
+body {
+
+    background-color: yellow;
+
+}
+
+h1 {
+    color: red;
+    padding: 60px;
+}
+
+</style>
+
+</head>
+
+3) CSS Inline (etiqueta de atributo): Consiste en escribir tu CSS dentro de los corchetes de un atributo HTML específico.
+
+Ejemplo: <h1 style="color: blue; align-text: center;"> Este es un encabezado </h1>
+
+ 
+Los selectores indican el tipo de elemento o conjunto de elementos al que aplicaremos estilo. Existen varios tipos de selectores:
+
+Universal: Selecciona todos los elementos, usando un asterisco.
+De tipo o etiqueta: Selecciona todos los elementos con el nombre especifico.
+De clase: Selecciona los elementos que tienen el atributo class especificado. Se utiliza un punto (.) para hacer referencia a él.
+ID: Identificador único para un elemento. Se utiliza un #.
+
+Las pseudo-clases y pseudo-elementos son conjuntos de selectores que sirven para fines muy específicos. Por ahora, solo es importante que conozcas su sintaxis y más adelante en las sesiones los aplicaremos.
+
+Pseudo-clases: Es una palabra clave que se añade a los selectores y que especifica un estado especial del elemento seleccionado. Ayudan a reducir el exceso de clases. 
+Pseudo-elementos: Se añaden a los selectores, pero no describen un estado especial -como lo hacen las pseudoclases-, sino que permiten añadir estilos a una parte concreta del documento. 
+
+La cascada significa que el orden de las reglas importa y es el algoritmo que se usa para resolver conflictos donde se aplican múltiples reglas CSS a un elemento HTML.
+
+Son cuatro los factores los que se consideran en la cascada:
+
+1) Orden
+
+2) Especificidad
+
+3) Origen
+
+4) Importancia
+
+ 
+
+1) Orden: Es la secuencia en la que aparecen las reglas. 
+
+En el siguiente ejemplo, tenemos dos reglas aplicadas a un elemento p, y CSS tomará en cuenta la última que aparece, es decir el color del párrafo será purple y no red. 
+
+p {
+
+color: red;
+
+}
+
+p {
+
+color: purple;
+
+}
+
+2) Especificidad: Cuando las ambigüedades no han sido resueltas, se calcula cuál es el selector más específico. Por ejemplo:
+
+Un selector de elemento es menos específico (selecciona todos los elementos de aquel tipo que aparecen en la página) por lo que presenta una puntuación más baja en especificidad.
+Un selector de clase es más específico (selecciona solo los elementos de una página que tienen un valor de atributo class dado), y por tanto recibe una puntuación mayor.
+Un selector de identificación es más específico que los pasados, por eso hay que tener prudencia en usarlos, pues puede dificultar el manejo de estilos en algunos casos.
+3) Origen: Tiene que ver con el orden en el que aparece CSS y de dónde proviene, ya sea un estilo de navegador, CSS de una extensión de navegador o tu propio CSS creado en hojas de estilos, en línea, etc. 
+
+4) Importancia: No todas las reglas de CSS se calculan de la misma manera entre sí, ni se les da la misma especificidad entre sí.
+
+El orden de importancia, de menor a mayor importancia, es el siguiente:
+
+Tipo de regla normal, como font-size , background o color
+Tipo de regla de animation
+Tipo de regla de !important (siguiendo el mismo orden que el origen)
+Tipo de regla de transition
+
+
+INTRO-WEB-5 - Display (6 min)
+La propiedad display tiene dos funciones:
+
+1) Determina si el elemento al que se aplica actuará como un elemento en línea o bloque. 
+
+Aquí es importante recordar que los elementos en línea se comportan como palabras dentro de una oración, ocupando ese espacio determinado, situándose uno tras otro. 
+
+Mientras que los elementos de bloque no se sitúan uno detrás de otro, sino que crean una nueva línea para ellos mismos y a menos que se indique otra cosa, los elementos de bloque se expanden por todo el ancho disponible de una página. 
+
+Si no recuerdas esto, puedes regresar a esta parte del módulo de HTML donde hay un par de ejemplos visuales. 
+
+2) Determina cómo deben comportarse los hijos del elemento a nivel del diseño (layout) usado, que puede ser flow layout (diseño de flujo), grid (cuadrícula) o flex (flexible). 
+
+Por ejemplo, al aplicar un display: flex; a un elemento, esto hará que todos los elementos contenidos en él adquieran la misma propiedad de flexibilidad. 
+
+ 
+ 
+Algunas de las propiedas más comunes y usadas en CSS son: 
+
+Alto y ancho - Height and width
+Margen y relleno - Margin y padding
+Borde - Border
+Color - Color
+Fondo - Background
+Fuente - Font
+
+Por favor dirígete a la documentaciónLinks to an external site., busca cada una de estas propiedades y realiza tus propias anotaciones sobre cada una de ellas, pues en la parte síncrona haremos uso de cada una. 
+
+
+INTRO-WEB-5 - Position (8 min)
+La propiedad position modifica cómo se comporta un elemento en el flujo normal de un documento (esto significa el cómo se leen los elementos, es decir, de arriba hacia abajo y de derecha a izquierda) y cómo se relaciona con otros elementos. 
+
+Los valores de esta propiedad son: 
+
+static 
+relative 
+absolute 
+fixed 
+sticky 
+Adicional a esto, para mover la posición de los elementos se usan las propiedades: top, right, left y bottom.
+
+La posición static es el valor por defecto de todos los elementos.
+
+La posición relative hace que el elemento sea desplazado,según se indique, pero siguiendo el flujo normal, sin que el desplazamiento afecte a otros elementos.
+
+La posición absolute no permanece según el flujo normal del documento, y los demás elementos actúan y se posicionan como si este elemento no existiera. 
+
+La posición fixed, es similar al posicionamiento absoluto, pero la excepción es que el bloque contenedor de referencia de este valor de la propiedad es el viewport. Esto puede usarse para crear un elemento flotante que se mantiene en la misma posición independientemente del desplazamiento.
+
+La posición sticky fijará un elemento en la pantalla y no se moverá. Este elemento es tratado como un elemento posicionado de manaera relative hasta que pasa un límite y ahí se trata como elemento fixed.
